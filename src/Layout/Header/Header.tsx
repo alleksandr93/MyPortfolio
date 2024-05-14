@@ -6,17 +6,20 @@ import {FlexWrapper} from '../../component/FlexWrapper';
 
 export const HeaderComponent = () => {
     return (
-        <Header>
-            <FlexWrapper justify={'space-around'}>
-                <Logo/>
-                <Menu/>
-            </FlexWrapper>
-        </Header>
+        <>
+            <HeaderStyled>
+                <FlexWrapper justify={'space-around'}>
+                    <Logo/>
+                    <Menu/>
+                </FlexWrapper>
+            </HeaderStyled>
+        </>
+
     );
 };
 
-const Header = styled.header`
+const HeaderStyled = styled.header`
     display: flex;
-position: fixed;
+    position: fixed;
     background-color: transparent;
 `

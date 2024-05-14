@@ -1,16 +1,18 @@
-import './App.css';
 import styled from 'styled-components';
 import {HeaderComponent} from './Layout/Header/Header';
 import {Main} from './Layout/section/Main/Main';
+import React from 'react';
+import {Skills} from './Layout/section/Skills/Skills';
 
 
 function App() {
     return (
-    <Wrapper>
-        {/*<HeaderComponent/>*/}
-        <Main/>
-    </Wrapper>
-
+        <>
+            <Wrapper>
+                <Main/>
+                <Skills/>
+            </Wrapper>
+        </>
     );
 }
 
